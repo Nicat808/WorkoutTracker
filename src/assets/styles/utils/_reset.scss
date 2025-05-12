@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Inter;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a,
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  // text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input {
+  outline: none;
+  border: none;
+  background-color: inherit;
+  color: inherit;
+}
+header,
+footer,
+nav,
+section {
+  display: block;
+}
+textarea {
+  resize: none;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}

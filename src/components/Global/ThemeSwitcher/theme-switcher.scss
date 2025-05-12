@@ -1,0 +1,9 @@
+#themeSwitcher {
+  padding: $space-s $space-m;
+  border-radius: $round-m;
+  @include font($text-sm, 500);
+  font-family: $Monomakh;
+  @include flexCenter();
+  gap: $space-xs;
+  border: 1px solid $secondary-color;
+}

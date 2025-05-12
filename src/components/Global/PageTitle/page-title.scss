@@ -1,0 +1,6 @@
+#page-title {
+  @include font($text-xl, 500);
+  text-align: center;
+  font-family: $Tagesschrift;
+  text-transform: capitalize;
+}

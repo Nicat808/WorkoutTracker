@@ -1,0 +1,26 @@
+aside {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid $secondary-color;
+  .sidebar-item {
+    padding: $space-m;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: $space-s;
+    transition: $transition-fast;
+    &:hover {
+      background-color: $secondary-color;
+      color: $main-white;
+    }
+
+    svg {
+      font-size: $text-m;
+    }
+    span {
+      font-size: $text-m;
+      text-transform: capitalize;
+    }
+  }
+}

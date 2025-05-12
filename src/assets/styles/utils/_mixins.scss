@@ -1,0 +1,35 @@
+@mixin flex($direction: null, $justify: null, $align: null, $gap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+@mixin flexCenter() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flexCol() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flexBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin positionCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin marginCenter() {
+  margin: 0 auto;
+}
+@mixin font($size: null, $weight: null, $height: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

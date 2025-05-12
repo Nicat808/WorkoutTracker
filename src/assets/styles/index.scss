@@ -1,0 +1,34 @@
+//Utils
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/mixins";
+@import "./utils/responsive-mixins";
+
+//Layout
+@import "../../components/Layout/Sidebar/sidebar.scss";
+@import "../../components/Layout/Header/header.scss";
+@import "../../components/Layout/layout.scss";
+
+//Components
+@import "../../components/Global/ThemeSwitcher/theme-switcher.scss";
+@import "../../components/Global/PageTitle/page-title.scss";
+
+//Pages
+@import "../../pages/Home/Home.scss";
+@import "../../pages/Exercises/exercises.scss";
+@import "../../pages/Factory/factory.scss";
+@import "../../pages/Analytics/analytics.scss";
+@import "../../pages/Muscles/muscles.scss";
+@import "../../pages/WorkoutSplits/workout-splits.scss";
+@import "../../pages/Calendar/calendar.scss";
+
+.dark {
+  background-color: $main-dark;
+  color: $main-white;
+}
+html {
+  background-color: $main-white;
+  color: $main-dark;
+  transition: $transition-fast;
+}

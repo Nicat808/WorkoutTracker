@@ -1,0 +1,10 @@
+.app-wrapper {
+  display: flex;
+  padding: $space-l 0;
+  main {
+    flex-grow: 1;
+  }
+  .content-wrapper {
+    padding: 0 $space-l;
+  }
+}

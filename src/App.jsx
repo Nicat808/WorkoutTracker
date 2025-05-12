@@ -1,35 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import { ROUTE_NAME } from "./utils/route";
+import Layout from "./components/Layout/Layout";
+import Excercises from "./pages/Exercises/Exercises";
+import Home from "./pages/Home/Home";
+import Factory from "./pages/Factory/Factory";
+import Analytics from "./pages/Analytics/Analytics";
+import Muscles from "./pages/Muscles/Muscles";
+import WorkoutSplits from "./pages/WorkoutSplits/WorkoutSplits";
+import Calendar from "./pages/Calendar/Calendar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Routes>
+      <Route path={ROUTE_NAME.index} element={<Layout />}>
+        <Route index element={<Home name={"home"} />} />
+        <Route
+          path={ROUTE_NAME.exercises}
+          element={<Excercises name={ROUTE_NAME.exercises} />}
+        />
+        <Route
+          path={ROUTE_NAME.muscles}
+          element={<Muscles name={ROUTE_NAME.muscles} />}
+        />
+        <Route
+          path={ROUTE_NAME.workoutSplits}
+          element={<WorkoutSplits name={ROUTE_NAME.workoutSplits} />}
+        />
+        <Route
+          path={ROUTE_NAME.calendar}
+          element={<Calendar name={ROUTE_NAME.calendar} />}
+        />
+        <Route
+          path={ROUTE_NAME.factory}
+          element={<Factory name={ROUTE_NAME.factory} />}
+        />
+        <Route
+          path={ROUTE_NAME.analytics}
+          element={<Analytics name={ROUTE_NAME.analytics} />}
+        />
+      </Route>
+    </Routes>
+  );
+};
 
-export default App
+export default App;
