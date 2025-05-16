@@ -1,7 +1,11 @@
-import React from "react";
+import PageTitle from "../../components/Global/PageTitle/PageTitle";
 
-const Calendar = () => {
-  return <div>Calendar</div>;
+const Calendar = ({ name }) => {
+  return (
+    <div>
+      <PageTitle name={name} />
+    </div>
+  );
 };
 
 export default Calendar;

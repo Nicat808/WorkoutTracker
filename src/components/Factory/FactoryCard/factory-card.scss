@@ -1,0 +1,28 @@
+.fabric-part-card {
+  position: relative;
+  transition: $transition-slow-m;
+  transform-style: preserve-3d;
+  box-shadow: $shadow-soft;
+  border-radius: $round-m;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+  .fabric-part-card-front,
+  .fabric-part-card-back {
+    @include flexCenter();
+    padding: $space-m;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .fabric-part-card-back {
+    transform: rotateY(180deg);
+  }
+  .fabric-part-card-front {
+    @include font($text-l, 600, _, $Monomakh);
+    text-transform: capitalize;
+  }
+}

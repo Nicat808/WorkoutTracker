@@ -8,6 +8,8 @@ import Analytics from "./pages/Analytics/Analytics";
 import Muscles from "./pages/Muscles/Muscles";
 import WorkoutSplits from "./pages/WorkoutSplits/WorkoutSplits";
 import Calendar from "./pages/Calendar/Calendar";
+import FactoryWrapper from "./components/Factory/FactoryWrapper/FactoryWrapper";
+import ExerciseFactory from "./components/Factory/ExerciseFactory/ExerciseFactory";
 
 const App = () => {
   return (
@@ -34,6 +36,14 @@ const App = () => {
           path={ROUTE_NAME.factory}
           element={<Factory name={ROUTE_NAME.factory} />}
         />
+
+        <Route element={<FactoryWrapper />}>
+          <Route
+            path={ROUTE_NAME.exerciseFactory}
+            element={<ExerciseFactory />}
+          />
+        </Route>
+
         <Route
           path={ROUTE_NAME.analytics}
           element={<Analytics name={ROUTE_NAME.analytics} />}

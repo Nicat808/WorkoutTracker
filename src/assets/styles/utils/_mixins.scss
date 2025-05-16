@@ -28,8 +28,22 @@
 @mixin marginCenter() {
   margin: 0 auto;
 }
-@mixin font($size: null, $weight: null, $height: null) {
+@mixin font($size: null, $weight: null, $height: null, $family: null) {
   font-size: $size;
   font-weight: $weight;
   line-height: $height;
+  font-family: $family;
+}
+
+@mixin gridBy4part() {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@mixin gridBy3part() {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@mixin gridBy2part() {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

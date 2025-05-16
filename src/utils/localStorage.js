@@ -4,12 +4,22 @@ export const getFromLocalStorage = (key) => {
     return item ? JSON.parse(item) : [];
   } catch (error) {
     console.error("Error parsing localStorage data:", error);
-    return [];
+    return error;
   }
 };
 export const addToLocalStorage = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value));
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.error("Error updating localStorage data:", error);
+    return error;
+  }
 };
 export const deleteFromLocalStorage = (key) => {
-  localStorage.removeItem(key);
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    console.error("Error deleteing localStorage data:", error);
+    return error;
+  }
 };

@@ -1,9 +1,12 @@
 .app-wrapper {
-  display: flex;
-  padding: $space-l 0;
+  padding-top: $space-l;
   main {
-    flex-grow: 1;
+    position: absolute;
+    right: 0;
+    width: $content-width;
+    padding-bottom: $space-l;
   }
+
   .content-wrapper {
     padding: 0 $space-l;
   }

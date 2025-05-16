@@ -1,7 +1,11 @@
-import React from "react";
+import PageTitle from "../../components/Global/PageTitle/PageTitle";
 
-const Analytics = () => {
-  return <div>Analytics</div>;
+const Analytics = ({ name }) => {
+  return (
+    <div>
+      <PageTitle name={name} />
+    </div>
+  );
 };
 
 export default Analytics;

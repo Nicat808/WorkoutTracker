@@ -1,9 +1,10 @@
 import ThemeSwitcher from "../../Global/ThemeSwitcher/ThemeSwitcher";
+import Quote from "./Quote";
 
 const Header = () => {
   return (
     <header>
-      <h1>die tryin.</h1>
+      <Quote say="die tryin." />
       <ThemeSwitcher />
     </header>
   );

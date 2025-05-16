@@ -2,8 +2,17 @@
 $main-dark: #0f0f0f;
 $main-white: #e7f6f2;
 $secondary-color: #393646;
+$red: #750e21;
+$blue: #1b1a55;
+$green: #27391c;
+$grey: #787a91;
+
+//Layout partials
+$sidebar-width: 20%;
+$content-width: 80%;
 
 //Transition
+$transition-slow-m: 0.75s ease-in-out;
 $transition-slow: 0.5s ease-in-out;
 $transition-fast: 0.25s ease-in-out;
 
@@ -31,3 +40,7 @@ $text-xl: 48px;
 $Inter: "Inter", sans-serif;
 $Monomakh: "Monomakh", system-ui;
 $Tagesschrift: "Tagesschrift", system-ui;
+
+//Box-shadow
+$shadow-touch: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+$shadow-soft: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

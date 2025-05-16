@@ -1,1 +1,3 @@
-
+.exercises-container {
+  @include gridBy4part();
+}
