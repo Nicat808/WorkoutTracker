@@ -1,8 +1,12 @@
-class Exercise {
-  constructor(details) {
-    this.name = details.name; //Shoulder press
-    this.type = details.type; //Compound
-    this.category = details.category; //Push
-    this.targetMuscles = details.targetMuscles; // Shoulders,Triceps
+export class Exercise {
+  constructor(name, mechanic, force, targetMuscles, image) {
+    this.name = name; //Shoulder press
+    this.mechanic = mechanic; //Compound
+    this.force = force; //Push
+    this.targetMuscles = [...targetMuscles]; // Shoulders,Triceps
+    this.image = image; // Exercise image
+  }
+  getPrimaryMuscle() {
+    return this.targetMuscles[0].generalName;
   }
 }

@@ -1,3 +1,32 @@
+@import "../../components/Exercises/ExerciseCard/exercise-card.scss";
+
 .exercises-container {
   @include gridBy4part();
+  gap: $space-m;
+}
+.search-filter-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: $space-l;
+  .exercise-filters {
+    display: flex;
+    gap: $space-l;
+    h5 {
+      @include font($text-sm, 600);
+      margin-bottom: $space-s;
+    }
+  }
+  .exercise-search {
+    display: flex;
+    align-items: center;
+    box-shadow: $shadow-soft;
+    padding-right: $space-m;
+    transition: $transition-fast;
+    border: 1px solid $secondary-color;
+    border-radius: $round-xs;
+    &.active {
+      border-color: $grey;
+    }
+  }
 }

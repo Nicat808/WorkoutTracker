@@ -22,6 +22,7 @@ aside {
     }
     &.active {
       background-color: $grey;
+      color: $main-white;
       font-weight: 500;
     }
     svg {

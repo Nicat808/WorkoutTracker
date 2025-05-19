@@ -1,7 +1,7 @@
 header {
   @include flexBetween();
   padding: 0 $space-l $space-s $space-l;
-  margin-bottom: $space-xl;
+  margin-bottom: $space-l;
   border-bottom: 1px solid $secondary-color;
   #quote {
     @include font($text-l, 600);

@@ -1,15 +1,13 @@
 import { Routes, Route } from "react-router-dom";
-import { ROUTE_NAME } from "./utils/route";
+import { ROUTE_NAME } from "./utils/constants/route";
 import Layout from "./components/Layout/Layout";
 import Excercises from "./pages/Exercises/Exercises";
 import Home from "./pages/Home/Home";
-import Factory from "./pages/Factory/Factory";
 import Analytics from "./pages/Analytics/Analytics";
 import Muscles from "./pages/Muscles/Muscles";
 import WorkoutSplits from "./pages/WorkoutSplits/WorkoutSplits";
 import Calendar from "./pages/Calendar/Calendar";
-import FactoryWrapper from "./components/Factory/FactoryWrapper/FactoryWrapper";
-import ExerciseFactory from "./components/Factory/ExerciseFactory/ExerciseFactory";
+import ExerciseDetail from "./pages/ExerciseDetail/ExerciseDetail";
 
 const App = () => {
   return (
@@ -20,6 +18,7 @@ const App = () => {
           path={ROUTE_NAME.exercises}
           element={<Excercises name={ROUTE_NAME.exercises} />}
         />
+        <Route path={ROUTE_NAME.exerciseDetail} element={<ExerciseDetail />} />
         <Route
           path={ROUTE_NAME.muscles}
           element={<Muscles name={ROUTE_NAME.muscles} />}
@@ -32,17 +31,6 @@ const App = () => {
           path={ROUTE_NAME.calendar}
           element={<Calendar name={ROUTE_NAME.calendar} />}
         />
-        <Route
-          path={ROUTE_NAME.factory}
-          element={<Factory name={ROUTE_NAME.factory} />}
-        />
-
-        <Route element={<FactoryWrapper />}>
-          <Route
-            path={ROUTE_NAME.exerciseFactory}
-            element={<ExerciseFactory />}
-          />
-        </Route>
 
         <Route
           path={ROUTE_NAME.analytics}

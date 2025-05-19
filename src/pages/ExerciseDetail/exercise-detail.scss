@@ -1,0 +1,59 @@
+.exercise-detail {
+  display: flex;
+  justify-content: space-between;
+  .exercise-infos {
+    width: 35%;
+    h1 {
+      text-align: center;
+      @include font($text-lm, 600);
+    }
+    h3 {
+      @include font($text-m, 600);
+      margin-top: $space-xl;
+      margin-bottom: $space-m;
+    }
+  }
+  .exercise-image {
+    width: 60%;
+  }
+}
+table.classification-table {
+  border-color: $secondary-color;
+  border-collapse: collapse;
+  width: 100%;
+
+  td {
+    padding: $space-s;
+    transition: $transition-fast;
+    font-size: $text-sm;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: $main-white;
+    }
+    &:first-child {
+      width: 40%;
+      font-weight: 800;
+    }
+    &:last-child {
+      width: 60%;
+      font-weight: 400;
+    }
+  }
+}
+.detail-target-muscles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-s;
+}
+.target-muscle {
+  width: fit-content;
+  padding: $space-s $space-m;
+  transition: $transition-fast;
+  border: 1px solid $secondary-color;
+  border-radius: $round-m;
+  &:hover {
+    background-color: $secondary-color;
+    color: $main-white;
+  }
+}

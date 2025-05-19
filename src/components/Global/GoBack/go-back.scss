@@ -1,0 +1,13 @@
+.get-back-icon {
+  width: fit-content;
+  padding: $space-s $space-m;
+  border: 1px solid $secondary-color;
+  @include flexCenter();
+  border-radius: $round-m;
+  transition: $transition-fast;
+  cursor: pointer;
+  margin-bottom: $space-m;
+  &:hover {
+    background-color: $grey;
+  }
+}

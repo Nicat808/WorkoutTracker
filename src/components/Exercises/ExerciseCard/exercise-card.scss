@@ -1,0 +1,20 @@
+.exercise-card {
+  width: 100%;
+  @include flexCol();
+  justify-content: space-between;
+  box-shadow: $shadow-soft;
+  padding: $space-m;
+  cursor: pointer;
+  border-radius: $round-s;
+  border: 1px solid transparent;
+  transition: $transition-fast;
+  &:hover {
+    border-color: $secondary-color;
+  }
+  h2 {
+    text-align: center;
+    @include font($text-l, 500);
+    margin-bottom: $space-xl;
+    margin-top: $space-m;
+  }
+}

@@ -13,11 +13,14 @@
 //Components
 @import "../../components/Global/ThemeSwitcher/theme-switcher.scss";
 @import "../../components/Global/PageTitle/page-title.scss";
+@import "../../components/Global/Dropdown/dropdown.scss";
+@import "../../components/Global/Input/input.scss";
+@import "../../components/Global/GoBack/go-back.scss";
 
 //Pages
 @import "../../pages/Home/Home.scss";
 @import "../../pages/Exercises/exercises.scss";
-@import "../../pages/Factory/factory.scss";
+@import "../../pages/ExerciseDetail/exercise-detail.scss";
 @import "../../pages/Analytics/analytics.scss";
 @import "../../pages/Muscles/muscles.scss";
 @import "../../pages/WorkoutSplits/workout-splits.scss";
